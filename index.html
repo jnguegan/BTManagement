@@ -250,34 +250,89 @@
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" style="padding:60px 0">
   <div class="container">
-    <h2>Contact</h2>
-    <p class="sub">
-      Get in touch to discuss a mandate, project, or strategic opportunity.
+    <h2 style="color:#fff">Contact</h2>
+    <p class="sub" style="color:rgba(255,255,255,.75)">
+      Share an opportunity or mandate. We respond quickly if it fits our scope.
     </p>
 
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="card">
-      <input type="hidden" name="form-name" value="contact">
+    <div class="grid" style="grid-template-columns:1.15fr .85fr;gap:18px">
 
-      <p style="display:none">
-        <label>Don’t fill this out: <input name="bot-field"></label>
-      </p>
+      <!-- LEFT: FORM -->
+      <div class="card" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)">
+        <div class="card-inner" style="padding:22px">
 
-      <label>Full Name</label>
-      <input type="text" name="name" required>
+          <div class="kicker">SEND DETAILS</div>
 
-      <label>Email Address</label>
-      <input type="email" name="email" required>
+          <form name="btm-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="btm-contact">
 
-      <label>Company / Organisation</label>
-      <input type="text" name="company">
+            <p style="display:none">
+              <label>Don’t fill this out: <input name="bot-field"></label>
+            </p>
 
-      <label>Message</label>
-      <textarea name="message" rows="5" required></textarea>
+            <div class="row">
+              <input type="text" name="name" placeholder="Your name" required>
+              <input type="email" name="email" placeholder="Email" required>
+            </div>
 
-      <button type="submit" class="btn btn-primary">Send message</button>
-    </form>
+            <div class="row mt12">
+              <select name="opportunity_type" required>
+                <option value="" disabled selected>Opportunity type</option>
+                <option>Commercial partnership</option>
+                <option>Marketing / revenue strategy</option>
+                <option>Operational management support</option>
+                <option>Investment / acquisition</option>
+                <option>Project / facility development</option>
+                <option>Other</option>
+              </select>
+
+              <input type="text" name="sector" placeholder="Sector (e.g. clubs, academies, facilities)">
+            </div>
+
+            <textarea name="message" placeholder="Company / asset summary, traction, financial highlights, and what you are seeking." required></textarea>
+
+            <button type="submit" class="submit">✉️ Send</button>
+
+            <p class="fineprint">
+              By submitting, you confirm you are authorized to share the information.
+              We treat communications confidentially.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- RIGHT: DIRECT -->
+      <div class="card" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)">
+        <div class="card-inner" style="padding:22px">
+
+          <div class="kicker">DIRECT</div>
+
+          <p style="color:rgba(255,255,255,.85)">
+            Prefer email? Use the contact below and attach a short teaser (PDF) or executive summary.
+          </p>
+
+          <div class="direct-box">
+            <strong>BT Management SARL</strong><br><br>
+            <b>Email:</b> info@btmgmsport.com<br>
+            <b>Scope:</b> Sports management, marketing & investment advisory<br>
+            <b>Notes:</b> No athlete representation
+          </div>
+
+          <a href="mailto:info@btmgmsport.com" class="pill">📩 Email us</a>
+
+          <div class="tip">
+            Tip: Add a “Data Room link” and “Last 12 months P&amp;L / KPIs” to speed up review.
+          </div>
+
+          <div class="compliance">
+            BT Management SARL does not act as an athlete agent and does not provide player representation services.
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -294,6 +349,7 @@
 </body>
 
 </html>
+
 
 
 
