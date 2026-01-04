@@ -254,12 +254,30 @@
   <div class="container">
     <h2>Contact</h2>
     <p class="sub">
-      Get in touch to discuss a mandate, project or strategic opportunity.
+      Get in touch to discuss a mandate, project, or strategic opportunity.
     </p>
-    <p>
-      Email: <strong>contact@btmanagement.com</strong><br>
-      LinkedIn: <strong>BT Management SARL</strong>
-    </p>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="card">
+      <input type="hidden" name="form-name" value="contact">
+
+      <p style="display:none">
+        <label>Don’t fill this out: <input name="bot-field"></label>
+      </p>
+
+      <label>Full Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email Address</label>
+      <input type="email" name="email" required>
+
+      <label>Company / Organisation</label>
+      <input type="text" name="company">
+
+      <label>Message</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn btn-primary">Send message</button>
+    </form>
   </div>
 </section>
 
@@ -276,3 +294,4 @@
 </body>
 
 </html>
+
