@@ -25,13 +25,13 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);bac
 .btn.small{padding:9px 16px;font-size:14px}
 .menu{display:none;background:#fff;border:1px solid var(--line);border-radius:4px;padding:8px 10px;font:600 14px var(--sans);color:var(--ink)}
 
-.hero{background:radial-gradient(ellipse at 85% 10%,rgba(226,194,127,.38),transparent 55%),radial-gradient(ellipse at 0% 100%,rgba(201,164,92,.14),transparent 50%),linear-gradient(180deg,#fffdf8 0%,#f8f2e4 100%);color:var(--text);border-bottom:1px solid var(--line)}
+.hero{background:linear-gradient(90deg,#fffaf0 0%,#fffaf0 38%,rgba(255,250,240,.75) 50%,rgba(255,250,240,0) 64%),url(/assets/mali-backdrop.svg) right bottom/auto 100% no-repeat,#fffaf0;color:var(--text);border-bottom:1px solid var(--line)}
 .hero .wrap{padding-top:96px;padding-bottom:96px;max-width:var(--max)}
 .eyebrow{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:#a17d36;font-weight:600;margin:0 0 14px}
 h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.2;color:var(--ink)}
-.hero h1{color:var(--ink);font-size:clamp(36px,5vw,60px);margin:0 0 22px;max-width:880px;letter-spacing:-.01em}
+.hero h1{color:var(--ink);font-size:clamp(36px,4.6vw,56px);margin:0 0 22px;max-width:660px;letter-spacing:-.01em}
 .hero h1 em{font-style:normal;color:#a17d36}
-.lead{font-size:19px;color:var(--muted);max-width:680px;margin:0 0 32px}
+.lead{font-size:19px;color:var(--muted);max-width:600px;margin:0 0 32px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
 .notice{margin-top:40px;font-size:13.5px;color:var(--muted);border-left:2px solid var(--gold);padding-left:12px;max-width:640px}
 
@@ -100,7 +100,8 @@ footer .legal{border-top:1px solid #e0d8c4;margin-top:32px;padding-top:18px;font
   .links{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;align-items:flex-start;padding:18px 24px;border-bottom:1px solid rgba(201,164,92,.25);gap:14px}
   .links.open{display:flex}.menu{display:block}
   .grid,.who,.steps,.row{grid-template-columns:1fr}
-  section{padding:64px 0}.hero .wrap{padding-top:56px;padding-bottom:64px}.brand img{height:48px}
+  section{padding:64px 0}.hero .wrap{padding-top:56px;padding-bottom:220px}
+  .hero{background:linear-gradient(180deg,rgba(255,252,245,.96) 0%,rgba(255,252,245,.88) 62%,rgba(255,252,245,0) 80%),url(/assets/mali-backdrop.svg) right bottom/auto 320px no-repeat,#fffaf0}.brand img{height:48px}
   .cookiebar{flex-direction:column;align-items:stretch}
 }
 @media print{header.top,.cta,form,.cookiebar{display:none}}
