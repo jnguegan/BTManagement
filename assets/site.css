@@ -25,7 +25,7 @@ header.top{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);bac
 .btn.small{padding:9px 16px;font-size:14px}
 .menu{display:none;background:#fff;border:1px solid var(--line);border-radius:4px;padding:8px 10px;font:600 14px var(--sans);color:var(--ink)}
 
-.hero{background:linear-gradient(90deg,#fffaf0 0%,#fffaf0 38%,rgba(255,250,240,.75) 50%,rgba(255,250,240,0) 64%),url(/assets/mali-backdrop.svg) right bottom/auto 100% no-repeat,#fffaf0;color:var(--text);border-bottom:1px solid var(--line)}
+.hero{background:linear-gradient(90deg,rgba(255,250,240,.96) 0%,rgba(255,250,240,.9) 36%,rgba(255,250,240,.55) 55%,rgba(255,250,240,.05) 78%),url(/assets/hero-niger.jpg) center 60%/cover no-repeat,#f3d9a4;color:var(--text);border-bottom:1px solid var(--line)}
 .hero .wrap{padding-top:96px;padding-bottom:96px;max-width:var(--max)}
 .eyebrow{font-size:12.5px;letter-spacing:.24em;text-transform:uppercase;color:#a17d36;font-weight:600;margin:0 0 14px}
 h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.2;color:var(--ink)}
@@ -101,7 +101,7 @@ footer .legal{border-top:1px solid #e0d8c4;margin-top:32px;padding-top:18px;font
   .links.open{display:flex}.menu{display:block}
   .grid,.who,.steps,.row{grid-template-columns:1fr}
   section{padding:64px 0}.hero .wrap{padding-top:56px;padding-bottom:220px}
-  .hero{background:linear-gradient(180deg,rgba(255,252,245,.96) 0%,rgba(255,252,245,.88) 62%,rgba(255,252,245,0) 80%),url(/assets/mali-backdrop.svg) right bottom/auto 320px no-repeat,#fffaf0}.brand img{height:48px}
+  .hero{background:linear-gradient(180deg,rgba(255,250,240,.94) 0%,rgba(255,250,240,.9) 68%,rgba(255,250,240,0) 84%),url(/assets/hero-niger-m.jpg) center bottom/cover no-repeat,#f3d9a4}
   .cookiebar{flex-direction:column;align-items:stretch}
 }
 @media print{header.top,.cta,form,.cookiebar{display:none}}
